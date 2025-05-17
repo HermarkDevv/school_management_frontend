@@ -19,6 +19,15 @@ import SideBar from './pages/Admin/SideBar'
 import Students from './pages/Admin/Students'
 import Teachers from './pages/Admin/Teachers'
 
+import StudentDashboard from './pages/Students/Dashboard';
+import StudentAnnouncememnts from './pages/Students/Announcememnts';
+import StudentAssignments from './pages/Students/Assignments';
+import StudentAttendance from './pages/Students/Attendance';
+import StudentLibrary from './pages/Students/Library';
+import StudentPerformance from './pages/Students/Performance';
+import StudentProfile from './pages/Students/Profile';
+import StudentSideBar from './pages/Students/SideBar';
+
 
 function App() {
 
@@ -35,6 +44,7 @@ function App() {
 
         {/* All the dashboard pages.routes */}
         <Route exact path='/admin/dashboard' element={<AdminDashboard />} />
+        <Route exact path='/student/dashboard' element={<StudentDashboard />} />
 
         {/* Admin Sections Here*/}
         <Route exact path='/admin/announcement' element={<Announcement />} />
@@ -49,6 +59,16 @@ function App() {
         <Route exact path='/admin/sideBar' element={<SideBar />} />
         <Route exact path='/admin/students' element={<Students />} />
         <Route exact path='/admin/teachers' element={<Teachers />} />
+
+        {/* Student Sections Here */}
+        <Route exact path='/student/announcement' element={<StudentAnnouncememnts />} />
+        <Route exact path='/student/assignment' element={<StudentAssignments />} />
+        <Route exact path='/student/attendance' element={<StudentAttendance />} />
+        <Route exact path='/student/library' element={<StudentLibrary />} />
+        <Route exact path='/student/performance' element={<StudentPerformance />} />
+        <Route exact path='/student/settings' element={<StudentProfile />} />
+        <Route exact path='/student/sidebar' element={<StudentSideBar />} />
+
       </Routes>
     </Router>
   )
