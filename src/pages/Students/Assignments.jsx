@@ -1,10 +1,21 @@
 import { useState, useEffect } from 'react'
-import SideBar from './SideBar'
+import StudentSideBar from './SideBar'
 import axios from 'axios'
+
+import { AssignmentsContainer, SidebarContainer, Content, AssignmentButton, AssignmentCard, AssignmentTitle, AssignmentDescription, AssignmentDoneMessage } from '../../styles/AssignmentsStyles'
+
 
 const StudentAssignments = () => {
     return (
-        <div>StudentAssignments</div>
+        <AssignmentsContainer>
+            <SidebarContainer>
+                <StudentSideBar />
+            </SidebarContainer>
+
+            <Content>
+                <h1>Assignments</h1>
+            </Content>
+        </AssignmentsContainer>
     )
 }
 

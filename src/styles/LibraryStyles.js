@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const LibraryContainer = styled.div`
   display: flex;
-  padding-left: 240px;
 `;
 
 export const Content = styled.div`

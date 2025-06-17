@@ -47,10 +47,6 @@ const StudentSideBar = () => {
                     <StyledLink to='/student/announcement'> Announcement </StyledLink>
                 </SidebarNavItem>
                 <SidebarNavItem>
-                    <SidebarIcon> <BsCalendarEvent /> </SidebarIcon>
-                    <StyledLink to='/student/events'> Events and Calender </StyledLink>
-                </SidebarNavItem>
-                <SidebarNavItem>
                     <SidebarIcon> <BsGear /> </SidebarIcon>
                     <StyledLink to='/student/settings'>Student Profile </StyledLink>
                 </SidebarNavItem>
